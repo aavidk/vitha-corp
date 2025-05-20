@@ -1,0 +1,23 @@
+services:
+  - type: web
+    name: n8n
+    env: node
+    region: oregon # or your preferred region
+    plan: free # or starter/pro for more resources
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: N8N_BASIC_AUTH_ACTIVE
+        value: "true"
+      - key: N8N_BASIC_AUTH_USER
+        value: "your-username"
+      - key: N8N_BASIC_AUTH_PASSWORD
+        value: "your-strong-password"
+      - key: N8N_PROTOCOL
+        value: "https"
+      - key: N8N_HOST
+        value: "your-render-app-name.onrender.com"
+      - key: N8N_PORT
+        value: "8080"
+      - key: N8N_ENCRYPTION_KEY
+        value: "your-32-char-encryption-key" # generate a random 32 character string
