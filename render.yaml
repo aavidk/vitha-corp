@@ -10,9 +10,9 @@ services:
       - key: N8N_BASIC_AUTH_ACTIVE
         value: "true"
       - key: N8N_BASIC_AUTH_USER
-        value: "your-username"
+        value: "avinash.dharmik@gmail.com"
       - key: N8N_BASIC_AUTH_PASSWORD
-        value: "your-strong-password"
+        value: "Romee@61082"
       - key: N8N_PROTOCOL
         value: "https"
       - key: N8N_HOST
